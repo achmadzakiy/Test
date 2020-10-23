@@ -168,7 +168,7 @@ svg:not(:root).svg-inline--fa {
   max-width: 5em;
   min-width: 1.5em;
   overflow: hidden;
-  padding: .25em;
+  padding: 0.25em;
   right: 0;
   text-overflow: ellipsis;
   top: 0;
@@ -282,6 +282,7 @@ svg:not(:root).svg-inline--fa {
   margin-left: 2.5em;
   padding-left: 0;
 }
+
 .fa-ul > li {
   position: relative;
 }
@@ -296,8 +297,8 @@ svg:not(:root).svg-inline--fa {
 
 .fa-border {
   border: solid 0.08em #eee;
-  border-radius: .1em;
-  padding: .2em .25em .15em;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
 }
 
 .fa-pull-left {
@@ -326,12 +327,12 @@ svg:not(:root).svg-inline--fa {
 
 .fa-spin {
   -webkit-animation: fa-spin 2s infinite linear;
-          animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
 }
 
 .fa-pulse {
   -webkit-animation: fa-spin 1s infinite steps(8);
-          animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
 }
 
 @-webkit-keyframes fa-spin {
@@ -339,6 +340,7 @@ svg:not(:root).svg-inline--fa {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+  
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
@@ -377,15 +379,17 @@ svg:not(:root).svg-inline--fa {
 .fa-flip-horizontal {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
   -webkit-transform: scale(-1, 1);
-  transform: scale(-1, 1); }
+  transform: scale(-1, 1);
+}
 
 .fa-flip-vertical {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   -webkit-transform: scale(1, -1);
-          transform: scale(1, -1);
+  transform: scale(1, -1);
 }
 
-.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   -webkit-transform: scale(-1, -1);
   transform: scale(-1, -1);
@@ -396,7 +400,7 @@ svg:not(:root).svg-inline--fa {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical,
-:root .fa-flip-both{
+:root .fa-flip-both {
   -webkit-filter: none;
   filter: none;
 }
@@ -443,7 +447,8 @@ svg:not(:root).svg-inline--fa {
   width: 1px;
 }
 
-.sr-only-focusable:active, .sr-only-focusable:focus {
+.sr-only-focusable:active, 
+.sr-only-focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
