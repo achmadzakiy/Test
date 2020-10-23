@@ -101,14 +101,15 @@ svg:not(:root).svg-inline--fa
 }
 
 .svg-inline--fa.fa-pull-left {
-  margin-right: .3em;
+  margin-right: 0.3em;
   width: auto;
 }
 
 .svg-inline--fa.fa-pull-right {
-  margin-left: .3em;
+  margin-left: 0.3em;
   width: auto;
 }
+
 .svg-inline--fa.fa-border {
   height: 1.5em;
 }
@@ -128,7 +129,9 @@ svg:not(:root).svg-inline--fa
   margin: auto;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 0;  
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
 }
 
 .fa-layers {
@@ -138,10 +141,6 @@ svg:not(:root).svg-inline--fa
   text-align: center;
   vertical-align: -0.125em;
   width: 1em;
-}
-.fa-layers svg.svg-inline--fa {
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
 }
 
 .fa-layers-text, .fa-layers-counter {
