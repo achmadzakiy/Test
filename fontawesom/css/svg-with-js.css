@@ -141,7 +141,7 @@ svg:not(:root).svg-inline--fa {
   width: 1em;
 }
 
-.fa-layers-text, 
+.fa-layers-text,
 .fa-layers-counter {
   display: inline-block;
   position: absolute;
